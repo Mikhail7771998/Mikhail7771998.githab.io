@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        background-color: rgb(70, 70, 100);
+        height: 100vh;
+        width: 100vh;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .tree {
+        position: absolute;
+        bottom: 30%;
+        left: 45%;
+
+    }
+    .field {
+        position: absolute;
+        width: 100%;
+        bottom: 0%;
+    }
+    h1 {
+        color: black;
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        font-family: rum;
+        z-index: 9999;
+    }
+    @font-face {
+        font-family: rum;
+    src: url("rum.otf") format("opentype");
+    }
+    .snowFlake {
+        height: 50px;
+        width: 50px;
+        background-image: url("snowflake.png");
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+    }
+    @keyframes falling {
+        to{
+            top: 100vh;
+            transform: rotate(720deg);
+        }
+    }
+    .snowFlake:nth-child(1) {
+        left: 23vw;
+        animation: falling 12s .2s linear infinite;
+    }
+    .snowFlake:nth-child(2) {
+        left: 31vw;
+        animation: falling 14s .4s linear infinite;
+    }
+    .snowFlake:nth-child(3) {
+        left: 43vw;
+        animation: falling 18s .9s linear infinite;
+    } 
+    .snowFlake:nth-child(4) {
+        left: 59vw;
+        animation: falling 20s .2s linear infinite;
+    }
+    .snowFlake:nth-child(5) {
+        left: 76vw;
+        animation: falling 24s .4s linear infinite;
+    }
+    .snowFlake:nth-child(6) {
+        left: 81vw;
+        animation: falling 27s .5s linear infinite;
+    }
+    .snowFlake:nth-child(7) {
+        left: 95vw;
+        animation: falling 30s .2s linear infinite;
+    }
+    </style>
+</head>
+<body>   
+    <div class="snowFlake"></div>
+    <div class="snowFlake"></div>
+    <div class="snowFlake"></div>
+    <div class="snowFlake"></div>
+    <div class="snowFlake"></div>
+    <div class="snowFlake"></div>
+    <div class="snowFlake"></div>
+    <img src="tree.png" alt="Новогодняя Ёлка" class="tree" width="400">
+    <img src="field.png" alt="Зимнее поле" class="field">
+    <div class="card"></div>
+        <h1>ямямямя</h1>
+    </div>
+ 
+
+</body>
+</html>

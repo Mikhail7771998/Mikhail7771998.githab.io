@@ -1,0 +1,2 @@
+[SerializeField]
+private GameObject obj;
